@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <nav class="menu">
+        <button class="menu__button  menu__button--close">Закрыть меню</button>
+        <ul class="menu__list">
+          <li><a class="menu__link" href="index.html">Главная</a></li>
+          <li><a class="menu__link">Фото и видео</a></li>
+          <li><a class="menu__link" href="form.html">Форма отзыва</a></li>
+          <li><a class="menu__link" href="https://htmlacademy.ru">Html Academy</a></li>
+        </ul>
+        <p class="menu__logo-wrapper">
+          <a class="menu__logo-link">
+            <img class="menu__logo-img" src="#" width="102" height="83" alt="Логотип Седона">
+          </a>
+          <button class="menu__button  menu__button--open">Открыть меню</button>
+        </p>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intrduction">
+        <img class="intrduction__img" src="#" alt="sedona">
+        <h2 class="intrduction__title">Фото и видео</h2>
+        <p class="intrduction__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </section>
+
+      <ul class=photo__list>
+        <li class="photo__item">
+          <img class="phtot__img" src="#" alt="Неродные просторы" >
+          <span class="photo__author">Автор фото:</span>
+          <span class="photo__author-name">Борис</span>
+          <span class="photo__likes">1350</span>
+        </li>
+
+        <li class="photo__item">
+          <img class="phtot__img" src="#" alt="Местная растительность">
+          <span class="photo__author">Автор фото:</span>
+          <span class="photo__author-name">Сергей</span>
+          <span class="photo__likes">143</span>
+        </li>
+
+        <li class="photo__item">
+          <img class="phtot__img" src="#" alt="Дорога на север">
+          <span class="photo__author">Автор фото:</span>
+          <span class="photo__author-name">Петр</span>
+          <span class="photo__likes">96</span>
+        </li>
+
+        <li class="photo__item">
+          <img class="phtot__img" src="#" alt="Мост дьявола" >
+          <span class="photo__author">Автор фото:</span>
+          <span class="photo__author-name">Антон</span>
+          <span class="photo__likes">254</span>
+        </li>
+      </ul>
+
+      <section class="video">
+        <h2 class="video__title  visually-hidden">Видеопрезентация</h2>
+        <b class="video__title">Все еще сомневаетесь?</b>
+        <p class="video__description">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+
+        <video controls width="320" height="200" poster="#">
+          <source src="video.mp4" type="video/mp4">
+          <source src="video.ogv" type="video/ogg">
+          <source src="video.webm" type="video/webm">
+        </video>
+
+        <div class="video__control">
+          <div class="video__play">
+            <div class="video_control-scale"></div>
+            <div class="video__control-toggle"></div>
+          </div>
+
+          <div class="video__settings">
+            <button class="video__replay">Повтор</button>
+            <span class="video__license">CC</span>
+            <button class="video__screen">Развернуть на всю ширину экрана</button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <p class="instagram">
+        <b class="visually-hidden">Sedona в инстаграме</b>
+        <a class="" href="#">#visitSedona</a>
+      </p>
+
+      <div class="social">
+        <span class="social__title  visually-hidden">Мы в социальных сетях</span>
+        <ul class="social__list">
+          <li><a class="social__link" href="#">Twitter</a></li>
+          <li><a class="social__link" href="#">Facebook</a></li>
+          <li><a class="social__link" href="#">instagram</a></li>
+        </ul>
+      </div>
+
+      <p class="copyright">
+        <b class="copyright__title">Разработано</b>
+        <a class="copyright__link" href="htmlacademy.ru">
+          <img src="#" alt="HTML Academy" width="27" height="34">
+        </a>
+      </p>
+    </footer>
+  </body>
+</html>
