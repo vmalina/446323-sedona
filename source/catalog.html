@@ -7,19 +7,19 @@
   <body>
     <header class="main-header">
       <nav class="menu">
-        <button class="menu__button  menu__button--close">Закрыть меню</button>
+        <button class="menu__button  menu__button--close" type="button">Закрыть меню</button>
         <ul class="menu__list">
           <li><a class="menu__link" href="index.html">Главная</a></li>
           <li><a class="menu__link">Фото и видео</a></li>
           <li><a class="menu__link" href="form.html">Форма отзыва</a></li>
           <li><a class="menu__link" href="https://htmlacademy.ru">Html Academy</a></li>
         </ul>
-        <p class="menu__logo-wrapper">
-          <a class="menu__logo-link">
+        <div class="menu__logo-wrapper">
+          <a class="menu__logo-link" href="index.html" title="Логотип">
             <img class="menu__logo-img" src="#" width="102" height="83" alt="Логотип Седона">
           </a>
-          <button class="menu__button  menu__button--open">Открыть меню</button>
-        </p>
+          <button class="menu__button  menu__button--open" type="button">Открыть меню</button>
+        </div>
       </nav>
     </header>
 
@@ -30,39 +30,42 @@
         <p class="intrduction__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
       </section>
 
-      <ul class=photo__list>
-        <li class="photo__item">
-          <img class="phtot__img" src="#" alt="Неродные просторы" >
-          <span class="photo__author">Автор фото:</span>
-          <span class="photo__author-name">Борис</span>
-          <span class="photo__likes">Количество лайков</span>
-          <span class="photo__likes-number">1350</span>
-        </li>
+      <section class="photo">
+        <h2 class="photo__title  visually-hidden">Фотографии</h2>
+        <ul class=photo__list>
+          <li class="photo__item">
+            <img class="photo__img" src="#" alt="Неродные просторы" >
+            <span class="photo__author">Автор фото:</span>
+            <span class="photo__author-name">Борис</span>
+            <span class="photo__likes">Количество лайков:</span>
+            <span class="photo__likes-count">1350</span>
+          </li>
 
-        <li class="photo__item">
-          <img class="phtot__img" src="#" alt="Местная растительность">
-          <span class="photo__author">Автор фото:</span>
-          <span class="photo__author-name">Сергей</span>
-          <span class="photo__likes">Количество лайков</span>
-          <span class="photo__likes-number">143</span>
-        </li>
+          <li class="photo__item">
+            <img class="photo__img" src="#" alt="Местная растительность">
+            <span class="photo__author">Автор фото:</span>
+            <span class="photo__author-name">Сергей</span>
+            <span class="photo__likes">Количество лайков:</span>
+            <span class="photo__likes-count">143</span>
+          </li>
 
-        <li class="photo__item">
-          <img class="phtot__img" src="#" alt="Дорога на север">
-          <span class="photo__author">Автор фото:</span>
-          <span class="photo__author-name">Петр</span>
-          <span class="photo__likes">Количество лайков</span>
-          <span class="photo__likes-number">96</span>
-        </li>
+          <li class="photo__item">
+            <img class="photo__img" src="#" alt="Дорога на север">
+            <span class="photo__author">Автор фото:</span>
+            <span class="photo__author-name">Петр</span>
+            <span class="photo__likes">Количество лайков:</span>
+            <span class="photo__likes-count">96</span>
+          </li>
 
-        <li class="photo__item">
-          <img class="phtot__img" src="#" alt="Мост дьявола" >
-          <span class="photo__author">Автор фото:</span>
-          <span class="photo__author-name">Антон</span>
-          <span class="photo__likes">Количество лайков</span>
-          <span class="photo__likes-number">254</span>
-        </li>
-      </ul>
+          <li class="photo__item">
+            <img class="photo__img" src="#" alt="Мост дьявола" >
+            <span class="photo__author">Автор фото:</span>
+            <span class="photo__author-name">Антон</span>
+            <span class="photo__likes">Количество лайков:</span>
+            <span class="photo__likes-count">254</span>
+          </li>
+        </ul>
+      </section>
 
       <section class="video">
         <h2 class="video__title  visually-hidden">Видеопрезентация</h2>
@@ -77,24 +80,26 @@
 
         <div class="video__control">
           <div class="video__play">
-            <div class="video_control-scale"></div>
+            <div class="video_control-scale">
+                <div class="video__control-bar"></div>
+            </div>
             <div class="video__control-toggle"></div>
           </div>
 
           <div class="video__settings">
-            <button class="video__replay">Повтор</button>
-            <span class="video__license">CC</span>
-            <button class="video__screen">Развернуть на всю ширину экрана</button>
+            <button class="video__replay" type="button">Повтор</button>
+            <button class="video__subtitles" type="button">CC</button>
+            <button class="video__screen" type="button">Развернуть на всю ширину экрана</button>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="main-footer">
-      <p class="instagram">
+      <div class="instagram">
         <b class="visually-hidden">Sedona в инстаграме</b>
         <a class="" href="#">#visitSedona</a>
-      </p>
+      </dic>
 
       <div class="social">
         <span class="social__title  visually-hidden">Мы в социальных сетях</span>
@@ -105,12 +110,12 @@
         </ul>
       </div>
 
-      <p class="copyright">
+      <div class="copyright">
         <b class="copyright__title">Разработано</b>
         <a class="copyright__link" href="htmlacademy.ru">
           <img src="#" alt="HTML Academy" width="27" height="34">
         </a>
-      </p>
+      </div>
     </footer>
   </body>
 </html>
