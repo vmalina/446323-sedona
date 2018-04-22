@@ -10,10 +10,18 @@
       <nav class="menu">
         <button class="menu__button  menu__button--close" type="button">Закрыть меню</button>
         <ul class="menu__list">
-          <li class="menu__item"><a class="menu__link">Главная</a></li>
-          <li class="menu__item"><a class="menu__link" href="catalog.html">Фото и видео</a></li>
-          <li class="menu__item"><a class="menu__link" href="">Форма отзыва</a></li>
-          <li class="menu__item"><a class="menu__link  menu__link--last" href="https://htmlacademy.ru">Html Academy</a></li>
+          <li class="menu__item">
+            <a class="menu__link">Главная</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="menu__item">
+            <a class="menu__link  menu__link--last" href="https://htmlacademy.ru">Html Academy</a>
+          </li>
         </ul>
         <div class="menu__logo-wrapper">
           <a class="menu__logo-link">
@@ -29,72 +37,75 @@
       <section class="greeting">
         <h2 class="greeting__title  visually-hidden">Добро пожаловать в Седону</h2>
         <div class="greeting__wrapper">
-          <img class="greeting__img" src="img/text-sedona-index.svg" width="280" height="213" halt="Welcome to Sedona">
+          <img class="greeting__img" src="img/text-sedona-index.svg" width="280" height="213" alt="Welcome to Sedona">
         </div>
-        <div class="greeting__inner container">
+        <div class="greeting_inner  container">
           <b class="greeting__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
         </div>
       </section>
 
       <section class="features">
-        <h2 class="features__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
-        <ul class="feature__list">
-          <li class="feature__item">
-            <div class="feature__description  feature__description--blue">
-              <b class="feature__title">Настоящий городок</b>
-              <span class="feature__number">&ndash;№1&ndash;</span>
-              <p class="feature__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+        <div class="features__inner  container">
+          <h2 class="features__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
+        </div>
+        <ul class="features__list">
+          <li class="feature  feature--blue  feature--first">
+            <div class="feature__description">
+
+                <b class="feature__slogan">Настоящий городок</b>
+                <span class="feature__number">&ndash;№1&ndash;</span>
+                <p class="feature__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
+
             </div>
-            <img class="feature__img" src="#" alt="Городок">
+            <img class="feature__img" src="img/main-city-mobile@1x.jpg" alt="Городок">
           </li>
 
-          <li class="feature__item">
-            <div class="feature__description  feature__description--blue">
-              <b class="feature__title">Там есть мост дьявола</b>
+          <li class="feature  feature--blue">
+            <div class="feature__description">
+              <b class="feature__slogan">Там есть мост дьявола</b>
               <span class="feature__number">&ndash;№2&ndash;</span>
               <p class="feature__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
             </div>
-            <img class="feature__img" src="#" alt="Мост дьявола">
+            <img class="feature__img" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
           </li>
-
-          <li class="feature__item">
-            <div class="feature__description  feature__description--gray">
-              <b class="feature__title">Небольшая площадь</b>
+          <li class="feature  feature--gray">
+            <div class="feature__description">
+              <b class="feature__slogan">Небольшая площадь</b>
               <span class="feature__number">&ndash;№3&ndash;</span>
               <p class="feature__text">Все интересные места находятся очень близко</p>
             </div>
           </li>
 
-          <li class="feature__item">
-            <div class="feature__description  feature__description--gray">
-              <b class="feature__title">Красивая дорога</b>
+          <li class="feature  feature--gray">
+            <div class="feature__description">
+              <b class="feature__slogan">Красивая дорога</b>
               <span class="feature__number">&ndash;№4&ndash;</span>
               <p class="feature__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
 
-          <li class="feature__item">
-            <div class="feature__description  feature__description--graye">
-              <b class="feature__title">Мало туристов</b>
+          <li class="feature  feature--gray">
+            <div class="feature__description">
+              <b class="feature__slogan">Мало туристов</b>
               <span class="feature__number">&ndash;№5&ndash;</span>
               <p class="feature__text">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
 
-          <li class="feature__item">
+          <li class="feature  feature--additional">
             <ul class="more-features">
-              <li class="more-feature  more-feature--hotel">
-                <b class="more-feature__title">Жилье</b>
+              <li class="more-features__item">
+                <b class="more-feature__slogan  more-feature__slogan--hotel">Жилье</b>
                 <p class="more-feature__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
 
-              <li class="more-feature  more-feature--souvenir">
-                <b class="more-feature__title">Сувениры</b>
+              <li class="more-features__item">
+                <b class="more-feature__slogan  more-feature__slogan--souvenir">Сувениры</b>
                 <p class="more-feature__text">Не только китайского, но и местного производства!</p>
               </li>
 
-              <li class="more-feature  more-feature--food">
-                <b class="more-feature__title">Еда</b>
+              <li class="more-features__item  more-features__item--last">
+                <b class="more-feature__slogan  more-feature__slogan--food">Еда</b>
                 <p class="more-feature__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
               </li>
             </ul>
@@ -111,30 +122,29 @@
 
       <section class="map">
         <h2 class="map__title  visually-hidden">Карта</h2>
-        <img class="map__img" src="#" alt="карта">
       </section>
 
     </main>
 
     <footer class="main-footer">
-      <div class="instagram">
-        <b class="visually-hidden">Sedona в инстаграме</b>
-        <a class="" href="#">#visitSedona</a>
+      <div class="main-footer__instagram  instagram">
+        <b class="instagram__title visually-hidden">Sedona в инстаграме</b>
+        <a class="instagram__link" href="#">#visitSedona</a>
       </div>
 
-      <div class="social">
+      <div class="main-footer__social  social">
         <span class="social__title  visually-hidden">Мы в социальных сетях</span>
         <ul class="social__list">
-          <li><a class="social__link" href="#">Twitter</a></li>
-          <li><a class="social__link" href="#">Facebook</a></li>
-          <li><a class="social__link" href="#">instagram</a></li>
+          <li class="social__item"><a class="social__link" href="#"><span class="social__name  visually-hidden">Twitter</span></a></li>
+          <li class="social__item"><a class="social__link" href="#"><span class="social__name  visually-hidden">Facebook</span></a></li>
+          <li class="social__item"><a class="social__link" href="#"><span class="social__name  visually-hidden">Youtube</span></a></li>
         </ul>
       </div>
 
-      <div class="copyright">
+      <div class="main-footer__copyright  copyright">
         <b class="copyright__title">Разработано</b>
-        <a class="copyright__link" href="htmlacademy.ru">
-          <img src="#" alt="HTML Academy" width="27" height="34">
+        <a class="copyright__link" href="https://htmlacademy.ru">
+          <svg class="copyright__icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/></svg>
         </a>
       </div>
     </footer>
