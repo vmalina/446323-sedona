@@ -11,7 +11,7 @@
         <button class="menu__button  menu__button--close" type="button">Закрыть меню</button>
         <ul class="menu__list">
           <li class="menu__item">
-            <a class="menu__link">Главная</a>
+            <a class="menu__link  menu__link--first">Главная</a>
           </li>
           <li class="menu__item">
             <a class="menu__link" href="photo.html">Фото и видео</a>
@@ -39,23 +39,17 @@
         <div class="greeting__wrapper">
           <img class="greeting__img" src="img/text-sedona-index.svg" width="280" height="213" alt="Welcome to Sedona">
         </div>
-        <div class="greeting_inner  container">
-          <b class="greeting__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
-        </div>
+        <b class="greeting__slogan">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
       </section>
 
       <section class="features">
-        <div class="features__inner  container">
-          <h2 class="features__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
-        </div>
+        <h2 class="features__title">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</h2>
         <ul class="features__list">
           <li class="feature  feature--blue  feature--first">
-            <div class="feature__description">
-
-                <b class="feature__slogan">Настоящий городок</b>
-                <span class="feature__number">&ndash;№1&ndash;</span>
-                <p class="feature__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
-
+            <div class="feature__description feature__description--first">
+              <b class="feature__slogan">Настоящий городок</b>
+              <span class="feature__number">&ndash;№1&ndash;</span>
+              <p class="feature__text">Седона не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <img class="feature__img" src="img/main-city-mobile@1x.jpg" alt="Городок">
           </li>
@@ -69,7 +63,7 @@
             <img class="feature__img" src="img/main-bridge-mobile@1x.jpg" alt="Мост дьявола">
           </li>
           <li class="feature  feature--gray">
-            <div class="feature__description">
+            <div class="feature__description  feature__description--gray   feature__description--border">
               <b class="feature__slogan">Небольшая площадь</b>
               <span class="feature__number">&ndash;№3&ndash;</span>
               <p class="feature__text">Все интересные места находятся очень близко</p>
@@ -77,7 +71,7 @@
           </li>
 
           <li class="feature  feature--gray">
-            <div class="feature__description">
+            <div class="feature__description  feature__description--gray  feature__description--border">
               <b class="feature__slogan">Красивая дорога</b>
               <span class="feature__number">&ndash;№4&ndash;</span>
               <p class="feature__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
@@ -85,7 +79,7 @@
           </li>
 
           <li class="feature  feature--gray">
-            <div class="feature__description">
+            <div class="feature__description  feature__description--gray  feature__description--last">
               <b class="feature__slogan">Мало туристов</b>
               <span class="feature__number">&ndash;№5&ndash;</span>
               <p class="feature__text">Большинство едет в Гранд Каньон и толпится там</p>
@@ -117,7 +111,7 @@
         <h2 class="booking__title  visually-hidden">Поиск гостиниц в Седоне</h2>
         <b class="booking__slogan">Заинтересовались?</b>
         <p class="booking__text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="button  button--booking" href="#">Найти гостиницу</a>
+        <a class="button  button--booking" href="#" tabindex="0">Найти гостиницу</a>
       </section>
 
       <section class="map">
