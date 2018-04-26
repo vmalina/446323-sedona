@@ -1,34 +1,31 @@
 .more-features {
   margin: 0;
   padding: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
   list-style: none;
   background-color: #ffffff;
   color: #000000;
 }
 
 .more-features__item {
-  margin-top: 40px;
-  padding-left: 22%;
-  padding-right: 6.25%;
-
-  &--last {
-    margin-bottom: 40px;
-  }
-}
-
-.more-feature__slogan {
   position: relative;
-  display: block;
-  margin-bottom: 20px;
-  font-size: 18px;
+  padding-left: 50px;
+  margin-bottom: 40px;
   line-height: 26px;
   text-transform: uppercase;
+
+  &--last {
+    margin-bottom: 0;
+  }
 
   &::before {
     position: absolute;
     content: "";
-    bottom: 0;
-    left: -50px;
+    top: 0;
+    left: 0;
     background-repeat: no-repeat;
   }
 
@@ -55,6 +52,14 @@
       background-image: url("../img/icon-burger.svg");
     }
   }
+}
+
+.more-feature__slogan {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
 }
 
 .more-feature__text {

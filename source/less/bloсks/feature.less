@@ -1,12 +1,10 @@
 .feature {
+  color: #000000;
+  background-color: #eeeeee;
+
   &--blue {
     color: #ffffff;
     background-color: #81b3d2;
-  }
-
-  &--gray {
-    color: #000000;
-    background-color: #eeeeee;
   }
 
   &--first {
@@ -21,16 +19,17 @@
 .feature__description {
   margin-left: 6.25%;
   margin-right: 6.25%;
-  padding-top: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   text-align: center;
+
+  &--blue {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 
   &--first {
     padding-top: 60px;
-  }
-
-  &--gray {
-    padding-top: 30px;
-    padding-bottom: 30px;
   }
 
   &--border {
@@ -71,5 +70,4 @@
 .feature__img {
   display: block;
   margin: 0 auto;
-  margin-top: 40px;
 }

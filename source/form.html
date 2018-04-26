@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -49,15 +50,17 @@
               <div class="review__wrapper">
                 <div class="review__inner">
                   <label class="review__label-name" for="name">Имя<sup>*</sup>:</label>
-                  <input class="review__input-name" type="text" id="name" name="name" placeholder="Петр" required>
+                  <input class="review__input-text" type="text" id="name" name="name" placeholder="Петр" required>
                 </div>
+
                 <div class="review__inner">
                   <label class="review__label-name" for="surname">Фамилия<sup>*</sup>:</label>
-                  <input class="review__input-name" type="text" id="surname" name="surname" placeholder="Иванов" required>
+                  <input class="review__input-text" type="text" id="surname" name="surname" placeholder="Иванов" required>
                 </div>
+
                 <div class="review__inner">
                   <label class="review__label-name" for="patronymic">Отчество:</label>
-                  <input class="review__input-name" type="text" id="patronymic" name="patronymic" placeholder="Александрович" required>
+                  <input class="review__input-text" type="text" id="patronymic" name="patronymic" placeholder="Александрович" required>
                 </div>
               </div>
             </fieldset>
@@ -65,13 +68,13 @@
             <fieldset class="review__fieldset">
               <legend class="review__title">Контактная информация</legend>
               <div class="review__wrapper">
-                <div class="review__inner  review__inner--contacts">
+                <div class="review__inner  review__inner--contacts  review__inner--tel">
                   <label class="review__label-contacts" for="phone">Контактный телефон<sup>*</sup>:</label>
-                  <input class="review__input-contacts" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
+                  <input class="review__input-text  review__input-text--contacts" type="tel" id="phone" name="phone" placeholder="Введите телефон" required>
                 </div>
-                <div class="review__inner  review__inner--contacts">
+                <div class="review__inner  review__inner--contacts  review__inner--email">
                   <label class="review__label-contacts" for="mail">Электронная почта<sup>*</sup>:</label>
-                  <input class="review__input-contacts" type="email" id="mail" name="mail" placeholder="Введите e-mail">
+                  <input class="review__input-text  review__input-text--contacts" type="email" id="mail" name="mail" placeholder="Введите e-mail">
                 </div>
               </div>
             </fieldset>
@@ -79,17 +82,17 @@
             <fieldset class="review__fieldset">
               <legend class="review__title">Ваше общее впечатление</legend>
               <div class="review__wrapper">
-                <div class="review__inner">
-                  <input class="review__input-choice" type="radio" name="impression" value="positive" id="positive" checked>
-                  <label class="review__label" for="positive">Скорее положительное</label>
+                <div class="review__inner  review__inner--impression">
+                  <input class="review__input-choice  visually-hidden" type="radio" name="impression" value="positive" id="positive" checked>
+                  <label class="review__label-choise  review__label-choise--impression" for="positive">Скорее положительное</label>
                 </div>
-                <div class="review__inner">
-                  <input class="review__input-choice" type="radio" name="impression" value="negative" id="negative">
-                  <label class="review__label" for="negative">Скорее отрицательное</label>
+                <div class="review__inner  review__inner--impression">
+                  <input class="review__input-choice  visually-hidden" type="radio" name="impression" value="negative" id="negative">
+                  <label class="review__label-choise  review__label-choise--impression" for="negative">Скорее отрицательное</label>
                 </div>
-                <div class="review__inner">
-                  <input class="review__input-choice" type="radio" name="impression" value="neutral" id="neutral">
-                  <label class="review__label" for="neutral">Затрудняюсь ответить</label>
+                <div class="review__inner  review__inner--impression">
+                  <input class="review__input-choice  visually-hidden" type="radio" name="impression" value="neutral" id="neutral">
+                  <label class="review__label-choise  review__label-choise--impression" for="neutral">Затрудняюсь ответить</label>
                 </div>
               </div>
             </fieldset>
@@ -97,28 +100,28 @@
             <fieldset class="review__fieldset">
               <legend class="review__title">Посещенные достопримечательности:</legend>
               <div class="review__wrapper">
-                <div class="review__inner">
-                  <input class="review__input-choice" type="checkbox" name="bridge" value="bridge" id="bridge">
-                  <label class="review__label" for="bridge">Мост дьявола</label>
+                <div class="review__inner  review__inner--sight">
+                  <input class="review__input-choice  visually-hidden" type="checkbox" name="bridge" value="bridge" id="bridge">
+                  <label class="review__label-choise  review__label-choise--sight" for="bridge">Мост дьявола</label>
                 </div>
-                <div class="review__inner">
-                  <input class="review__input-choice" type="checkbox" name="mountain" value="mountain" id="mountain">
-                  <label class="review__label" for="mountain">Гора-Колокол</label>
+                <div class="review__inner  review__inner--sight">
+                  <input class="review__input-choice  visually-hidden" type="checkbox" name="mountain" value="mountain" id="mountain">
+                  <label class="review__label-choise  review__label-choise--sight" for="mountain">Гора-Колокол</label>
                 </div>
-                <div class="review__inner">
-                  <input class="review__input-choice" type="checkbox" name="park" value="park" id="park">
-                  <label class="review__label" for="park">Слайд-парк</label>
+                <div class="review__inner  review__inner--sight">
+                  <input class="review__input-choice  visually-hidden" type="checkbox" name="park" value="park" id="park">
+                  <label class="review__label-choise  review__label-choise--sight" for="park">Слайд-парк</label>
                 </div>
-                <div class="review__inner">
-                  <input class="review__input-choice" type="checkbox" name="rock" value="rock" id="rock">
-                  <label class="review__label" for="rock">Красные скалы</label>
+                <div class="review__inner  review__inner--sight">
+                  <input class="review__input-choice  visually-hidden" type="checkbox" name="rock" value="rock" id="rock">
+                  <label class="review__label-choise  review__label-choise--sight" for="rock">Красные скалы</label>
                 </div>
               </div>
             </fieldset>
 
             <fieldset class="review__fieldset  review__fieldset--last">
               <legend class="review__title">Опишите свои эмоции:</legend>
-              <div class="review__wrapper">
+              <div class="review__inner  review__inner--textarea">
                 <textarea class="review__textarea" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </fieldset>

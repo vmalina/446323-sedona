@@ -1,9 +1,7 @@
 .copyright {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: center;
-  flex-shrink: 0;
+  align-items: center;
 }
 
 .copyright__title {
@@ -12,12 +10,19 @@
   line-height: 26px;
   font-weight: normal;
   color: #000000;
+  text-transform: uppercase;
+}
+
+.copyright__link {
+  display: inline-flex;
 }
 
 .copyright__icon {
   fill: #000000;
   width: 27px;
   height: 35px;
+  cursor: pointer;
+  transition-duration: 0.2s;
 
   &:hover {
     color: #81b3d2;
