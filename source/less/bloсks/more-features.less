@@ -1,0 +1,74 @@
+.more-features {
+  margin: 0;
+  padding: 0;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
+  list-style: none;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.more-features__item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 40px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  &--last {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+  }
+
+  &--hotel {
+    &::before {
+      width: 38px;
+      height: 37px;
+      background-image: url("../img/icon-house.svg");
+    }
+  }
+
+  &--souvenir {
+    &::before {
+      width: 32px;
+      height: 38px;
+      background-image: url("../img/icon-gift.svg");
+    }
+  }
+
+  &--food {
+    &::before {
+      width: 40px;
+      height: 36px;
+      background-image: url("../img/icon-burger.svg");
+    }
+  }
+}
+
+.more-feature__slogan {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.more-feature__text {
+  margin: 0;
+  padding: 0;
+  color: #333333;
+  background-color: #ffffff;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
