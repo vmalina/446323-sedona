@@ -1,6 +1,6 @@
 .booking {
-  padding-top: 30px;
-  padding-bottom: 49px;
+  padding-top: 28px;
+  padding-bottom: 50px;
   padding-left: 6.25%;
   padding-right: 6.25%;
   background-color: #ffffff;
@@ -10,7 +10,7 @@
 
 .booking__slogan {
   display: block;
-  margin-bottom: 25px;
+  margin-bottom: 19px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -27,4 +27,56 @@
   text-transform: uppercase;
   background-color: #ffffff;
   color: #333333;
+}
+
+.booking__new-line {
+  &--desktop {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .booking {
+    padding-left: 7.8%;
+    padding-right: 7.8%;
+    padding-top: 55px;
+    padding-bottom: 58px;
+  }
+
+  .booking__slogan {
+    font-size: 30px;
+    line-height: 30px;
+    margin-bottom: 28px;
+  }
+
+  .booking__text {
+    padding-left: 16%;
+    padding-right: 16%;
+    margin-bottom: 42px;
+  }
+
+  .booking__new-line {
+    display: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .booking {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 55px;
+    padding-bottom: 66px;
+  }
+
+  .booking__text {
+    padding-left: 27.3%;
+    padding-right: 27.3%;
+    margin-bottom: 46px;
+  }
+
+  .booking__new-line {
+    &--desktop {
+      display: block;
+    }
+  }
 }

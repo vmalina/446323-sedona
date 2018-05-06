@@ -3,20 +3,21 @@
   color: #000000;
   background-color: #ffffff;
   text-transform: uppercase;
-  padding-bottom: 30px;
+  padding-bottom: 27px;
   border-bottom: 1px solid #e5e5e5;
 
   &--form {
-    padding-bottom: 20px;
+    padding-bottom: 17px;
   }
 }
 
 .intrduction__wrapper {
   min-height: 158px;
+  margin-bottom: 39px;
   background-color: #a2c8de;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center bottom, top;
   background-size: cover;
 }
 
@@ -28,7 +29,7 @@
 .intrduction__title {
   margin: 0;
   padding: 0;
-  margin-top: 40px;
+  margin-bottom: 26px;
   margin-left: 6.25%;
   margin-right: 6.25%;
   font-size: 18px;
@@ -39,11 +40,76 @@
 .intrduction__text {
   margin: 0;
   padding: 0;
-  margin-top: 35px;
-  margin-left: 6.25%;
-  margin-right: 6.25%;
+  margin-left: 7.3%;
+  margin-right: 7.3%;
   font-size: 14px;
   line-height: 24px;
   color: #333333;
   font-weight: normal;
+
+  &--form {
+    margin-left: 5.5%;
+    margin-right: 5.5%;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .intrduction {
+    padding-bottom: 70px;
+    border-bottom: none;
+
+    &--form {
+      padding-bottom: 74px;
+    }
+  }
+
+  .intrduction__wrapper {
+    min-height: 290px;
+    margin-bottom: 73px;
+  }
+
+  .intrduction__img {
+    margin-top: 95px;
+  }
+
+  .intrduction__title {
+    margin-left: 7.8%;
+    margin-right: 7.8%;
+    margin-bottom: 28px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .intrduction__text {
+    margin-left: 21.5%;
+    margin-right: 21.5%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intrduction {
+    padding-bottom: 70px;
+    border-bottom: none;
+
+    &--form {
+      padding-bottom: 60px;
+    }
+  }
+
+  .intrduction__wrapper {
+    min-height: 300px;
+    margin-bottom: 110px;
+  }
+
+  .intrduction__title {
+    margin-left: 6%;
+    margin-right: 6%;
+    margin-bottom: 28px;
+  }
+
+  .intrduction__text {
+    margin-left: 31.6%;
+    margin-right: 32%;
+  }
 }

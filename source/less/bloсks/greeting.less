@@ -1,17 +1,17 @@
 .greeting {
-  padding-bottom: 40px;
+  padding-bottom: 16px;
   background-color: #ffffff;
   color: #000000;
 }
 
 .greeting__wrapper {
-  margin-bottom: 46px;
-  min-height: 389px;
+  margin-bottom: 39px;
   padding-top: 1px;
+  padding-bottom: 1px;
   background-color: #a2c8de;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: top;
+  background-position: center bottom, top;
   background-size: cover;
 }
 
@@ -19,16 +19,61 @@
   display: block;
   margin: 0 auto;
   margin-top: 90px;
+  margin-bottom: 85px;
 }
 
 .greeting__slogan {
   display: block;
-  width: auto;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
+  padding-left: 8%;
+  padding-right: 8%;
   text-align: center;
   font-size: 18px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+@media (min-width: @tablet-width) {
+  .greeting {
+    padding-bottom: 28px;
+  }
+
+  .greeting__wrapper {
+    margin-bottom: 50px;
+  }
+
+  .greeting__img {
+    margin-top: 76px;
+    margin-bottom: 90px;
+  }
+
+  .greeting__slogan {
+    padding-left: 21.3%;
+    padding-right: 21.3%;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .greeting {
+    width: 1200px;
+    padding-bottom: 40px;
+  }
+
+  .greeting__wrapper {
+    margin-bottom: 39px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+  }
+
+  .greeting__img {
+    margin-top: 76px;
+    margin-bottom: 100px;
+  }
+
+  .greeting__slogan {
+    padding-left: 260px;
+    padding-right: 260px;
+  }
 }

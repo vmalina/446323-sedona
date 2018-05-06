@@ -4,9 +4,7 @@
 }
 
 .features__title {
-  margin: 0;
-  padding: 0;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding-left: 6.25%;
   padding-right: 6.25%;
   font-size: 14px;
@@ -14,6 +12,7 @@
   font-weight: normal;
   text-transform: uppercase;
   text-align: center;
+  color: #333333;
 }
 
 .features__list {
@@ -22,4 +21,23 @@
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+@media (min-width: @tablet-width) {
+  .features__title {
+    width: 648px;
+    margin: 0 auto;
+    padding-left: 7.8%;
+    padding-right: 7.8%;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__title {
+    width: 960px;
+    padding-left: 120px;
+    padding-right: 120px;
+    margin-bottom: 55px;
+  }
 }
