@@ -1,15 +1,20 @@
 .menu__list {
+  display: none;
   margin: 0;
   padding: 0;
   list-style: none;
+
+  &--open {
+    display: block;
+  }
 }
 
 .menu__link {
   display: block;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  padding-left: 6.25%;
-  padding-right: 6.25%;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-left: 20px;
+  padding-right: 20px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -17,12 +22,14 @@
   color: #ffffff;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 40px;
   font-weight: bold;
   transition-duration: 0.2s;
 
   &--first {
+    position: relative;
     border-top: none;
   }
 
@@ -48,12 +55,114 @@
   color: #000000;
 }
 
+.menu__button {
+  position: absolute;
+  top: 17px;
+  right: 2px;
+  width: 23px;
+  height: 22px;
+  background-color: transparent;
+  border: none;
+  background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
+  z-index: 2;
+
+  &--open {
+    top: 17px;
+    right: 20px;
+    display: none;
+    background-image: url("../img/icon-menu.svg");
+  }
+
+  &--show {
+    display: block;
+  }
+
+  &:focus {
+    outline: none;
+    box-shadow: 0 0 0 1px #81b3d2;
+  }
+}
+
 .menu__logo-img {
   position: absolute;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
   margin: 0 auto;
-  width: 102px;
-  height: 83px;
+}
+
+@media (min-width: @tablet-width) {
+  .menu__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .menu__item {
+    width: 150px;
+
+    &:nth-of-type(2) {
+      margin-right: 150px;
+    }
+  }
+
+  .menu__link {
+    padding: 0;
+    font-size: 14px;
+    line-height: 26px;
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    box-shadow: none;
+
+    &:hover {
+      background-color: #ffffff;
+      color: #81b3d2;
+    }
+
+    &:active {
+      background-color: #ffffff;
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    &:focus {
+      color: #766357;
+
+      &:hover {
+        color: #604e43;
+      }
+
+      &:active {
+        color: rgba(118, 99, 87, 0.3);
+      }
+    }
+  }
+
+  .menu__logo-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+
+  .menu__button {
+    display: none;
+  }
+
+  .menu__logo-wrapper {
+    position: static;
+    min-height: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .menu__item {
+    width: 240px;
+
+    &:nth-of-type(2) {
+      margin-right: 240px;
+    }
+  }
 }

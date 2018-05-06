@@ -11,12 +11,19 @@
 .social__item {
   display: flex;
   flex-direction: row;
-  margin-right: 6px;
+  align-items: center;
+  margin-right: 7px;
+
+  &--last {
+    margin-right: 0;
+  }
 }
 
 .social__link {
   width: 46px;
   height: 48px;
+  display: flex;
+  flex-direction: row;
   background-color: #81b3d2;
   transition-duration: 0.2s;
   cursor: pointer;
@@ -28,4 +35,13 @@
   &:active {
     background-color: #5496bd;
   }
+}
+
+.social__icon {
+  margin: auto;
+  fill: #ffffff;
+}
+
+.social__link:active .social__icon {
+  opacity: 0.3;
 }
