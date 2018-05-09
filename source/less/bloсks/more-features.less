@@ -22,7 +22,7 @@
   }
 }
 
-.more-feature__slogan {
+.more-features__slogan {
   position: relative;
   margin-bottom: 14px;
   padding-left: 50px;
@@ -67,7 +67,7 @@
   }
 }
 
-.more-feature__text {
+.more-features__text {
   margin: 0;
   padding: 0;
   padding-left: 50px;
@@ -85,13 +85,14 @@
     flex-direction: row;
     flex-wrap: wrap;
     padding: 0;
+    margin-bottom: 61px;
   }
 
   .more-features__item {
-    width: 33.3%;
+    width: 33.33%;
     padding: 0;
     margin: 0;
-    padding-bottom: 65px;
+    padding-bottom: 0;
     align-items: center;
     text-align: center;
 
@@ -108,10 +109,10 @@
     }
   }
 
-  .more-feature__slogan {
+  .more-features__slogan {
     padding-left: 12%;
     padding-right: 12%;
-    padding-top: 155px;
+    padding-top: 160px;
     margin-bottom: 20px;
     font-size: 21px;
     line-height: 26px;
@@ -119,7 +120,7 @@
     &--hotel {
       &::before {
         left: 21%;
-        top: 56px;
+        top: 59px;
         width: 75px;
         height: 72px;
       }
@@ -127,8 +128,8 @@
 
     &--souvenir {
       &::before {
-        left: 31%;
-        top: 52px;
+        left: 30%;
+        top: 55px;
         width: 66px;
         height: 76px;
       }
@@ -136,25 +137,62 @@
 
     &--food {
       &::before {
-        left: 15%;
-        top: 58px;
+        left: 12%;
+        top: 60px;
         width: 79px;
         height: 69px;
       }
     }
   }
 
-  .more-feature__text {
-    padding-left: 19%;
-    padding-right: 17%;
+  .more-features__text {
+    padding-left: 17.5%;
+    padding-right: 17.5%;
     line-height: 21px;
+  }
+
+  .more-features__line {
+    display: none;
+
+    &--food {
+      display: block;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .more-feature__text {
-    padding-left: 18%;
-    padding-right: 18%;
+  .more-features {
+    margin-bottom: 83px;
+  }
+
+  .more-features__text {
+    padding-left: 14%;
+    padding-right: 14%;
     line-height: 21px;
+  }
+
+  .more-features__slogan {
+    &--hotel {
+      &::before {
+        left: 27%;
+      }
+    }
+
+    &--souvenir {
+      &::before {
+        left: 34%;
+      }
+    }
+
+    &--food {
+      &::before {
+        left: 22%;
+        top: 62px;
+      }
+    }
+  }
+
+  .more-features__line {
+    display: block;
   }
 }

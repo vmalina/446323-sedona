@@ -50,13 +50,15 @@
   }
 
   .booking__text {
-    padding-left: 16%;
-    padding-right: 16%;
     margin-bottom: 42px;
   }
 
   .booking__new-line {
-    display: none;
+    display: block;
+
+    &--mobile {
+      display: none;
+    }
   }
 }
 
@@ -75,8 +77,8 @@
   }
 
   .booking__new-line {
-    &--desktop {
-      display: block;
+    &--mobile {
+      display: none;
     }
   }
 }
