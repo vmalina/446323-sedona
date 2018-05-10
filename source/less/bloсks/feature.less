@@ -88,7 +88,6 @@
 
 @media (min-width: @tablet-width) {
   .feature {
-    width: 100%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -103,7 +102,7 @@
   }
 
   .feature__description {
-    width: 34%;
+    width: 33.3%;
     box-sizing: border-box;
     margin: 0;
     padding-top: 45px;
@@ -111,7 +110,7 @@
   }
 
   .feature__wrapper-img {
-    width: 66%;
+    width: 66.6%;
 
     &--bridge {
       order: -1;
@@ -145,8 +144,18 @@
 }
 
 @media (min-width: @desktop-width) {
+  .feature__description {
+    padding-top: 50px;
+  }
+
+  .feature__slogan {
+    margin-bottom: 10px;
+    padding-left: 31%;
+    padding-right: 31%;
+  }
+
   .feature__text {
-    padding-left: 17.5%;
-    padding-right: 17.5%;
+    padding-left: 16.5%;
+    padding-right: 16.5%;
   }
 }

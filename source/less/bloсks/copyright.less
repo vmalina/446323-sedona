@@ -1,20 +1,16 @@
 .copyright {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
 .copyright__title {
-  padding-right: 12px;
+  padding-right: 13px;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
   color: #000000;
   text-transform: uppercase;
-}
-
-.copyright__link {
-  display: inline-flex;
 }
 
 .copyright__icon {
@@ -41,8 +37,12 @@
   fill: #b2b2b2;
 }
 
-@media (min-width: @tablet-width) {
+@media (min-width: @desktop-width) {
   .copyright {
-    align-items: flex-start;
+    justify-content: stretch;
+  }
+
+  .copyright__title {
+    padding-left: 38%;
   }
 }

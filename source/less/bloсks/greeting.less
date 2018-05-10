@@ -11,13 +11,19 @@
   background-color: #a2c8de;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom, top;
-  background-size: cover;
+  background-position: center bottom, bottom;
+  background-size: contain, cover;
+
+  @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("img/bg-back-mobile@2x.jpg");
+  }
 }
 
 .greeting__img {
   display: block;
   margin: 0 auto;
+  width: 280px;
+  height: 213px;
   margin-top: 90px;
   margin-bottom: 85px;
 }
@@ -39,41 +45,46 @@
   }
 
   .greeting__wrapper {
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
+    background-size: contain, cover;
+    background-position: center bottom, bottom;
     margin-bottom: 50px;
   }
 
   .greeting__img {
     margin-top: 76px;
     margin-bottom: 90px;
+    width: 460px;
+    height: 350px;
   }
 
   .greeting__slogan {
-    padding-left: 21.3%;
-    padding-right: 21.3%;
+    padding-left: 21%;
+    padding-right: 21%;
     font-size: 21px;
     line-height: 26px;
   }
 }
 
+@media (min-width: @tablet-width) and (min-resolution: @retina-dpi), (min-width: @tablet-width) and (min-resolution: @retina-dppx) {
+  .greeing__wrapper {
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
+  }
+}
+
 @media (min-width: @desktop-width) {
-  .greeting {
-    width: 1200px;
-    padding-bottom: 40px;
-  }
-
   .greeting__wrapper {
-    margin-bottom: 39px;
-    padding-top: 1px;
-    padding-bottom: 1px;
-  }
-
-  .greeting__img {
-    margin-top: 76px;
-    margin-bottom: 100px;
+    background-image: url("../img/bg-intro-triangle-desktop.svg"), url("../img/bg-back-desktop@1x.jpg");
   }
 
   .greeting__slogan {
-    padding-left: 260px;
-    padding-right: 260px;
+    padding-left: 27%;
+    padding-right: 27%;
+  }
+}
+
+@media (min-width: @desktop-width) and (min-resolution: @retina-dpi), (min-width: @desktop-width) and (min-resolution: @retina-dppx) {
+  .greeting__wrapper {
+    background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@2x.jpg");
   }
 }

@@ -28,7 +28,11 @@
         </ul>
         <div class="menu__logo-wrapper">
           <a class="menu__logo-link" href="index.html">
-            <img class="menu__logo-img" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="Логотип Седона">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="menu__logo-img" src="img/logo-sedona-mobile.svg" alt="Логотип Седона">
+            </picture>
           </a>
           <button class="menu__button  menu__button--open" type="button">
             <span class="visually-hidden">Открыть меню</span>
@@ -92,15 +96,15 @@
               <div class="review__wrapper">
                 <div class="review__inner  review__inner--impression">
                   <input class="review__input-choice  visually-hidden" type="radio" name="impression" value="positive" id="positive" checked>
-                  <label class="review__label-choise  review__label-choise--impression" for="positive">Скорее положительное</label>
+                  <label class="review__label-choise  review__label-choise--impression" for="positive" tabindex="0">Скорее положительное</label>
                 </div>
                 <div class="review__inner  review__inner--impression">
                   <input class="review__input-choice  visually-hidden" type="radio" name="impression" value="negative" id="negative">
-                  <label class="review__label-choise  review__label-choise--impression" for="negative">Скорее отрицательное</label>
+                  <label class="review__label-choise  review__label-choise--impression" for="negative" tabindex="0">Скорее отрицательное</label>
                 </div>
                 <div class="review__inner  review__inner--impression">
                   <input class="review__input-choice  visually-hidden" type="radio" name="impression" value="neutral" id="neutral">
-                  <label class="review__label-choise  review__label-choise--impression" for="neutral">Затрудняюсь ответить</label>
+                  <label class="review__label-choise  review__label-choise--impression" for="neutral" tabindex="0">Затрудняюсь ответить</label>
                 </div>
               </div>
             </fieldset>
@@ -110,22 +114,22 @@
               <div class="review__wrapper  review__wrapper--sight">
                 <div class="review__inner  review__inner--sight">
                   <input class="review__input-choice  visually-hidden" type="checkbox" name="bridge" value="bridge" id="bridge">
-                  <label class="review__label-choise  review__label-choise--sight" for="bridge">Мост Дьявола</label>
+                  <label class="review__label-choise  review__label-choise--sight" for="bridge" tabindex="0">Мост Дьявола</label>
                 </div>
 
                 <div class="review__inner  review__inner--sight">
                   <input class="review__input-choice  visually-hidden" type="checkbox" name="mountain" value="mountain" id="mountain">
-                  <label class="review__label-choise  review__label-choise--sight" for="mountain">Гора-Колокол</label>
+                  <label class="review__label-choise  review__label-choise--sight" for="mountain" tabindex="0">Гора-Колокол</label>
                 </div>
 
                 <div class="review__inner  review__inner--sight">
                   <input class="review__input-choice  visually-hidden" type="checkbox" name="park" value="park" id="park">
-                  <label class="review__label-choise  review__label-choise--sight" for="park">Слайд-парк</label>
+                  <label class="review__label-choise  review__label-choise--sight" for="park" tabindex="0">Слайд-парк</label>
                 </div>
 
                 <div class="review__inner  review__inner--sight">
                   <input class="review__input-choice  visually-hidden" type="checkbox" name="rock" value="rock" id="rock">
-                  <label class="review__label-choise  review__label-choise--sight" for="rock">Красные скалы</label>
+                  <label class="review__label-choise  review__label-choise--sight" for="rock" tabindex="0">Красные скалы</label>
                 </div>
 
               </div>
