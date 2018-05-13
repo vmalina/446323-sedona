@@ -1,7 +1,7 @@
 .review {
   background-color: #ffffff;
   color: #000000;
-  padding-bottom: 42px;
+  padding-bottom: 40px;
 }
 
 .review__field {
@@ -11,11 +11,11 @@
   border-bottom: 1px solid #e5e5e5;
 
   &--name {
-    padding-bottom: 25px;
+    padding-bottom: 23px;
   }
 
   &--contacts {
-    padding-bottom: 27px;
+    padding-bottom: 28px;
   }
 
   &--message {
@@ -36,8 +36,7 @@
   text-align: center;
 
   &--name {
-
-    margin-bottom: 21px;
+    margin-bottom: 22px;
   }
 
   &--contacts {
@@ -66,7 +65,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 18px;
+  margin-bottom: 21px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -126,14 +125,16 @@
   flex: 1;
   min-width: 20px;
   box-sizing: border-box;
-  padding-top: 21px;
-  padding-bottom: 21px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   padding-left: 21px;
   padding-right: 21px;
   border: none;
   background-color: #f2f2f2;
   font-family: "PT Sans", "Arial", serif;
   font-style: normal;
+  font-size: 18px;
+  line-height: 26px;
 
   &--contacts {
     padding-right: 60px;
@@ -146,6 +147,7 @@
     line-height: 26px;
     font-weight: bold;
     color: #000000;
+    opacity: 1;
   }
 
   &:hover {
@@ -177,7 +179,7 @@
 .review__label-contacts {
   padding-left: 7.6%;
   padding-right: 7.6%;
-  margin-bottom: 6px;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
@@ -283,7 +285,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-bottom: 51px;
+  margin-bottom: 52px;
 }
 
 .review__message {
@@ -310,6 +312,7 @@
     line-height: 26px;
     font-weight: bold;
     color: #000000;
+    opacity: 1;
   }
 }
 
@@ -319,7 +322,7 @@
 
 @media (min-width: @tablet-width) {
   .review {
-    padding-bottom: 64px;
+    padding-bottom: 62px;
   }
 
   .review__container {
@@ -369,6 +372,21 @@
     }
   }
 
+  .review__title-wrapper {
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #dbdbdb;
+      left: 0;
+      top: 50%;
+      z-index: 1;
+    }
+  }
+
   .review__title {
     padding: 0;
     margin-bottom: 10px;
@@ -402,28 +420,15 @@
     }
 
     &--decoration {
-      display: flex;
-      align-items: center;
-
-      &::before {
-        content: "";
-        flex-grow: 1;
-        flex-shrink: 0;
-        width: 125px;
-        margin-right: 59px;
-        height: 1px;
-        background-color: #dbdbdb;
-      }
-
-      &::after {
-        content: "";
-        flex-grow: 1;
-        flex-shrink: 0;
-        width: 123px;
-        margin-left: 62px;
-        height: 1px;
-        background-color: #dbdbdb;
-      }
+      position: relative;
+      width: 61.7%;
+      box-sizing: border-box;
+      padding: 0 10px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #ffffff;
+      z-index: 2;
     }
   }
 
@@ -440,7 +445,7 @@
   }
 
   .review__label-choise {
-    padding-left: 77px;
+    padding-left: 78px;
   }
 
   .review__inner {
@@ -450,7 +455,7 @@
 
     &--contacts {
       flex-direction: column;
-      margin-bottom: 22px;
+      margin-bottom: 25px;
     }
 
     &--impression {
@@ -485,9 +490,6 @@
   }
 
   .review__input-text {
-    //padding-left: 23px;
-    padding-right: 21px;
-
     &--contacts {
       padding-right: 60px;
     }
@@ -560,7 +562,7 @@
 
 @media (min-width: @desktop-width) {
   .review {
-    padding-bottom: 70px;
+    padding-bottom: 65px;
   }
 
   .review__container {
@@ -574,20 +576,20 @@
     }
 
     &--contacts {
-      margin-bottom: 50px;
+      margin-bottom: 53px;
     }
 
     &--impression {
-      margin-bottom: 68px;
+      margin-bottom: 69px;
     }
 
     &--sight {
-      margin-bottom: 83px;
+      margin-bottom: 81px;
     }
 
     &--message {
       width: 100%;
-      padding-bottom: 58px;
+      padding-bottom: 60px;
     }
   }
 
@@ -607,12 +609,12 @@
     }
 
     &--contacts {
-      margin: 0;
-      margin-bottom: 77px;
+      margin: 0 auto;
+      margin-bottom: 75px;
     }
 
     &--sight {
-      margin: 0;
+      margin: 0 auto;
       margin-bottom: 55px;
     }
 
@@ -621,15 +623,8 @@
     }
 
     &--decoration {
-      &::before {
-        width: 280px;
-        margin-right: 6.1%;
-      }
-
-      &::after {
-        width: 280px;
-        margin-left: 6.1%;
-      }
+      width: 41.7%;
+      padding: 0 10px;
     }
   }
 
@@ -653,7 +648,6 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      align-items: center;
       margin-bottom: 0;
       padding-right: 8%;
       box-sizing: border-box;
@@ -689,7 +683,9 @@
 
   .review__label-contacts {
     padding: 0;
-    padding-right: 15px;
+    padding-right: 18px;
+    margin-top: 17px;
+    margin-bottom: 0;
   }
 
   .review__label-contacts span {
@@ -698,5 +694,20 @@
 
   .review__input-wrapper {
     flex: 1;
+  }
+
+  .review__label-choise {
+    padding-left: 79px;
+
+    &--impression {
+      &::before {
+        left: 4px;
+      }
+
+      &::after {
+        left: 21px;
+        top: 4px;
+      }
+    }
   }
 }

@@ -24,7 +24,7 @@
             <a class="menu__link" href="photo.html">Фото и видео</a>
           </li>
           <li class="menu__item">
-            <a class="menu__link">Форма отзыва</a>
+            <a class="menu__link  menu__link--active">Форма отзыва</a>
           </li>
           <li class="menu__item">
             <a class="menu__link  menu__link--last" href="https://htmlacademy.ru">Html Academy</a>
@@ -78,7 +78,9 @@
             </fieldset>
 
             <fieldset class="review__field  review__field--contacts">
-              <h2 class="review__title  review__title--contacts  review__title--decoration">Контактная информация:</h2>
+              <div class="review__title-wrapper">
+                <h2 class="review__title  review__title--contacts  review__title--decoration">Контактная информация:</h2>
+              </div>
               <div class="review__wrapper  review__wrapper--contacts">
                 <div class="review__inner  review__inner--contacts">
                   <label class="review__label-contacts" for="phone"><span>Контактный</span> телефон<sup>*</sup>:</label>
@@ -114,7 +116,9 @@
             </fieldset>
 
             <fieldset class="review__field  review__field--sight">
-              <h2 class="review__title  review__title--sight  review__title--decoration">Посещенные достопримечательности:</h2>
+              <div class="review__title-wrapper">
+                <h2 class="review__title  review__title--sight  review__title--decoration">Посещенные достопримечательности:</h2>
+              </div>
               <div class="review__wrapper  review__wrapper--sight">
                 <div class="review__inner  review__inner--sight">
                   <input class="review__input-choice  visually-hidden" type="checkbox" name="bridge" value="bridge" id="bridge">
@@ -140,8 +144,10 @@
             </fieldset>
 
             <fieldset class="review__field  review__field--message">
-              <h2 class="review__title  review__title--message  review__title--decoration">Опишите свои эмоции:</h2>
-                <div class="review__message-wrapper">
+              <div class="review__title-wrapper">
+                <h2 class="review__title  review__title--message  review__title--decoration">Опишите свои эмоции:</h2>
+              </div>
+              <div class="review__message-wrapper">
                 <textarea class="review__message" name="comment" placeholder="Опишите подробно все свои восторги"></textarea>
               </div>
             </fieldset>
