@@ -5,17 +5,18 @@
 }
 
 .greeting__wrapper {
+  min-height: 388px;
   margin-bottom: 39px;
   padding-top: 1px;
   padding-bottom: 1px;
   background-color: #a2c8de;
   background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: center bottom, bottom;
+  background-position: center bottom, top;
   background-size: contain, cover;
 
   @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
-    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-intro-triangle-mobile.svg"), url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
@@ -25,7 +26,6 @@
   width: 280px;
   height: 213px;
   margin-top: 90px;
-  margin-bottom: 85px;
 }
 
 .greeting__slogan {
@@ -46,8 +46,6 @@
 
   .greeting__wrapper {
     background-image: url("../img/bg-intro-triangle-tablet.svg"), url("../img/bg-back-tablet@1x.jpg");
-    background-size: contain, cover;
-    background-position: center bottom, bottom;
     margin-bottom: 50px;
   }
 

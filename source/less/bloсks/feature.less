@@ -110,10 +110,14 @@
   }
 
   .feature__wrapper-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
     width: 66.6%;
 
     &--bridge {
       order: -1;
+      justify-content: flex-start;
     }
   }
 
@@ -151,11 +155,21 @@
   .feature__slogan {
     margin-bottom: 10px;
     padding-left: 31%;
-    padding-right: 31%;
+    padding-right: 30%;
   }
 
   .feature__text {
     padding-left: 16.5%;
     padding-right: 16.5%;
+
+    &--bridge {
+      padding-left: 20.5%;
+      padding-right: 20.5%;
+    }
+  }
+
+  .feature__wrapper-img {
+    height: 256px;
+    overflow: hidden;
   }
 }

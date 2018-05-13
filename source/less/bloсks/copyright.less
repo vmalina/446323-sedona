@@ -1,5 +1,6 @@
 .copyright {
   display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
 }
@@ -37,12 +38,8 @@
   fill: #b2b2b2;
 }
 
-@media (min-width: @desktop-width) {
+@media (min-width: @tablet-width) {
   .copyright {
-    justify-content: stretch;
-  }
-
-  .copyright__title {
-    padding-left: 38%;
+    justify-content: flex-end;
   }
 }
