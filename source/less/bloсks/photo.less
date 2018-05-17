@@ -15,7 +15,7 @@
   width: auto;
   padding-left: 6.25%;
   padding-right: 6.25%;
-  padding-bottom: 18px;
+  padding-bottom: 16px;
   margin: 0 auto;
 }
 
@@ -36,7 +36,8 @@
 
 .photo__inner {
   display: flex;
-  margin-bottom: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 8px;
 
   &:last-of-type {
     margin-bottom: 0;
@@ -44,6 +45,7 @@
 }
 
 .photo__author {
+  flex-grow: 0;
   padding-right: 4px;
   color: #333333;
   font-size: 14px;
@@ -52,6 +54,8 @@
 }
 
 .photo__author-name {
+  flex-grow: 0;
+  margin-top: 2px;
   color: #333333;
 }
 
@@ -63,6 +67,7 @@
 .photo__likes-count {
   font-size: 14px;
   line-height: 24px;
+  font-weight: bold;
   color: #000000;
 }
 
@@ -108,7 +113,7 @@
     position: relative;
     padding-top: 17px;
     padding-bottom: 17px;
-    padding-left: 18px;
+    padding-left: 20px;
   }
 
   .photo__inner {
@@ -117,13 +122,18 @@
     &--count {
       position: absolute;
       top: 30px;
-      right: 33px;
+      right: 32px;
       margin-bottom: 0;
     }
 
     &--first {
       right: 20px;
     }
+  }
+
+  .photo__author-name {
+    flex-grow: 0;
+    max-width: 40%;
   }
 
   .photo__likes-icon {
